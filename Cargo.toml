@@ -1,0 +1,17 @@
+[package]
+name = "mcp3008"
+description = "A MCP3008 sensor driver for Rust."
+version = "1.0.0"
+authors = ["Philip Trauner <philip.trauner@arztpraxis.io>"]
+repository = "https://github.com/PhilipTrauner/rust-mcp3008"
+license = "MIT"
+readme = "README.md"
+categories = ["hardware-support", "external-ffi-bindings"]
+keywords = ["mcp3008", "spi", "sensor", "driver", "linux"]
+
+[badges]
+travis-ci = { repository = "PhilipTrauner/rust-mcp3008", branch = "master" }
+
+[dependencies]
+[target.'cfg(target_os = "linux")'.dependencies]
+spidev = "0.3.0"
